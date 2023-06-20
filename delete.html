@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="myform">
+        <select id="id_dropdown">
+         <option>One</option>
+         <option>Two</option>
+         <option>Three</option>
+        </select>
+        <input type="button" onclick="fun_remove()" value="Click to Remove">
+     </form> 
+     <script>
+        function fun_remove() {
+            var element = document.getElementById("id_dropdown");
+            element.remove(element.selectedindex);   
+        }
+     </script>
+</body>
+</html>
